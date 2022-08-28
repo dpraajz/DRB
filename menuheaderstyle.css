@@ -1,0 +1,22 @@
+.menu-container{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo img{
+    height: 50px;
+}
+
+.menu-items ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 10px;
+    ;
+}
+
+.menu-items img{
+    height: 50px;
+}

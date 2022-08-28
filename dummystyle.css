@@ -1,0 +1,52 @@
+body{
+    background-color: gray;
+}
+
+#container{
+    background-color:thistle;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#header{
+    height: 15%;
+    background-color: aqua;
+    margin: 1px;
+}
+
+#content{
+    height: 75%;
+    margin: 1px;
+    background-color: blue;
+    display: flex;
+}
+
+.sidebar{
+    width: 15%;
+    height: 100%;
+    background-color: chocolate;
+    margin: 1px;
+}
+
+.selected{
+    width: 70%;
+    height: 100%;
+    background-color:yellow;
+    margin: 1px;
+}
+
+.specific{
+    width: 15%;
+    height: 100%;
+    background-color:violet;
+    margin: 1px;
+}
+
+#footer{
+    height: 10%;
+    background-color: tomato;
+    margin: 1px;
+    clear: both;
+}

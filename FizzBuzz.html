@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FizzBuzz</title>
+  <style>
+    body{
+      text-align: center;
+      background-color: gray;
+    }
+    #displayFizzBuzz{
+      margin-top: 5px;
+      background-color: whitesmoke;
+      border: 1px solid magenta;
+    }
+  </style>
+</head>
+<body>
+  <label>Enter a number: </label>
+  <input type="text" id="userInput">
+  <input type="button" onclick="FizzBuzz()" value="Display">
+  <div id="displayFizzBuzz"></div>
+
+  <script>
+    function FizzBuzz(){
+      var n = parseInt(document.getElementById('userInput').value);
+      var values = document.getElementById('displayFizzBuzz');
+      var i;
+      for(i=1;i<=n;i++){
+        if(i%3==0 && i%5==0){
+          values.innerHTML+="FizzBuzz"+"<br>";
+        }
+        else if(i%3==0){
+          values.innerHTML+="Fizz"+"<br>";
+        }
+        else if(i%5==0){
+          values.innerHTML+="Buzz"+"<br>";
+        }
+        else{
+          values.innerHTML+=i+"<br>";
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try JS 3</title>
+</head>
+<body>
+    <input type="text" id="n1" placeholder="first name">
+    <input type="text" id="n2" placeholder="middle name">
+    <input type="text" id="n3" placeholder="last name" onchange="concatenate()">
+    <hr>
+    <div id="display"></div>
+
+    <script>
+        function concatenate(){
+            var n1=document.getElementById('n1').value;
+            var n2=document.getElementById('n2').value;
+            var n3=document.getElementById('n3').value;
+            // var string=n1+" "+n2+" "+n3;
+            document.getElementById('display').innerHTML=`Your fullname is ${n1} ${n2} ${n3}`;
+        }
+    </script>
+</body>
+</html>
