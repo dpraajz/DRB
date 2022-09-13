@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Semantic HTML</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+        <h1>Header</h1>
+        <nav>                                    <!-- Add this -->
+            <ul>
+                <li><a href='#'>Home</a></li>
+                <li><a href='#'>About</a></li>
+                <li><a href='#'>Blog</a></li>
+                <li><a href='#'>Sign Up</a></li>
+            </ul>
+        </nav>  
+    </header>
+
+    <hr>
+
+    <!-- Article -->
+    <article>
+        <header>
+          <h1>Article</h1>
+          <p>By Deep Raj Bhujel. Published <time datetime='2022-8-31-18:00+0545'>August 31st</time></p>
+        </header>
+      
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae reiciendis exercitationem optio, quis vitae esse laborum illum ducimus dolores asperiores, laboriosam quas obcaecati, suscipit ad iure cupiditate impedit temporibus consectetur commodi minima recusandae id eos debitis dolor? Ipsa dolorum repellendus labore ratione quia laboriosam vitae accusantium, est aut excepturi voluptatibus sequi dicta expedita temporibus accusamus iste optio. Harum corporis ut blanditiis ipsum quasi voluptatem excepturi voluptas nobis velit corrupti? Numquam vel optio atque eveniet accusantium sapiente, quo obcaecati in animi maiores blanditiis. Itaque, repellat architecto. Recusandae, eligendi quis ea consequuntur dolor doloremque repudiandae perspiciatis atque enim, omnis at, totam voluptatum!</p>
+        
+        <figure>
+            <img src="Deep Raj Bhujel.jpg" alt="This is a picture of Deep Raj Bhujel" />
+            <figcaption>Deep Raj Bhujel</figcaption>
+        </figure>
+        <!-- Aside 
+        <aside class='advert'>
+            <img src='Deep Raj Bhujel.jpg'/>
+        </aside>
+        -->
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus consequatur fugiat odio eveniet tempora error harum labore accusamus beatae repellendus, veniam ea eaque commodi! Vero eaque ad quo eligendi saepe dignissimos assumenda nulla sunt et quaerat eveniet optio, alias maiores asperiores soluta fugiat tempora quis ex, mollitia cumque magni! Modi impedit veritatis illo corrupti cumque culpa inventore fugiat quo doloremque possimus ratione, recusandae temporibus dolore aut necessitatibus odio assumenda eveniet, corporis dolorem optio, laborum nihil omnis? Veritatis voluptas nisi nostrum corporis, voluptatibus voluptatem eum cum temporibus ullam. Eos, esse ipsam atque in alias sed perferendis magnam earum id facere quidem.</p>
+        
+        <footer>
+          <p>This fake article was written by somebody at InternetingIsHard.com,
+             which is a pretty decent place to learn how to become a web developer. This
+             footer is only for the containing <code>&lt;article&gt;</code> element.</p>
+        </footer>      
+    </article>
+
+    <hr>
+
+    <!-- Section -->
+    <section>
+        <h2>Section 1</h2>
+        <p>HTML5 includes several “sectioning content” elements that affect the document outline.</p>
+          
+        <h3>Section 1.1</h3>
+        <p>The <code>&lt;header&gt;</code> element is one such sectioning element.</p>
+        
+        <h3>Section 1.2</h3>
+        <p>And so is the <code>&lt;footer&gt;</code> element.</p>
+    </section>    
+    <!-- sort of like an <article>, generic <div>, wrapper, titled by heading, h1-h6 permitted -->
+      <!-- article => self-contained content -->
+      <!-- section => section of sections, section of article(s), wrapper, container -->
+    <section>     
+        <h2>Section 2</h2>
+        <p>The <code>&lt;time&gt;</code> element is semantic, but it’s not sectioning content.</p>
+    </section>    
+    
+    <hr>
+
+    <!-- Sidebar aka Aside -->
+    <aside class='sidebar'>
+        <h2>Sidebar</h2>
+        <p>Some sidebar content</p>
+        <nav>
+          <h3>HTML &amp; CSS Tutorial</h3>
+          <ul>
+            <li><a href='#'>Introduction</a></li>
+            <li><a href='#'>Basic Web Pages</a></li>
+            <li><a href='#'>etc...</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <h3>JavaScript Tutorial</h3>
+          <ul>
+            <li><a href='#'>Introduction</a></li>
+            <li><a href='#'>Hello, JavaScript</a></li>
+            <li><a href='#'>etc...</a></li>
+          </ul>
+        </nav>
+    </aside>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <address>
+            Please contact <a href='mailto:deeprajbhujel@gmail.com'>Deep Raj Bhujel</a> for questions about this article.
+        </address>
+        <p>&copy; 2022 deeprajbhujel.com</p>
+    </footer>
+  </body>
+</html>
